@@ -9,14 +9,20 @@ type FilterProps = {
 export default function Filter({ onSearch, onFilterType }: FilterProps) {
     const pokemonTypes = ['bug', 'dark', 'dragon', 'electric', 'fairy', 'fighting', 'fire', 'flying', 'ghost', 'grass', 'ground', 'ice', 'normal', 'poison', 'psychic', 'rock', 'steel', 'water'];
 
+    const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const value = e.target.value;
+        if (value.length >= 3 || value === '') {
+            onSearch(value);
+        }
+    };
     return (
         <div className="my-20">
             <div className="my-12">
-            <Input
-                type="text"
-                placeholder="Search Pokemon"
-                onChange={(e) => onSearch(e.target.value)}
-            />
+                <Input
+                    type="text"
+                    placeholder="Search Pokemon"
+                    onChange={handleSearch}
+                />
             </div>
             <div className="grid grid-cols-3 gap-2">
                 {pokemonTypes.map((type, index) => (

@@ -3,19 +3,13 @@ import { useQuery, gql } from '@apollo/client';
 import PokemonCard from './PokemonCard';
 import { Pokemon } from '@/../types/pokemon.type';
 import PikaLoader from "@/components/utils/PikaLoader";
-import {useState} from "react";
+import { FixedSizeGrid as Grid } from 'react-window';
+
 
 // GraphQL query
 const GET_ALL_POKEMON = gql`
     query MyQuery {
         allPokemon {
-            abilities {
-                primary
-            }
-            locations {
-                appearancePercentage
-                location
-            }
             name
             sprite
             stats {
