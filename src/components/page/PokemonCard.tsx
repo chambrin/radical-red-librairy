@@ -3,8 +3,18 @@ import Image from "next/image";
 import {Card, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
 import {Separator} from "@/components/ui/separator";
 import { Progress } from "@/components/ui/progress"
+import { motion } from 'framer-motion';
 
 export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
+    const distortAnimation = {
+        scaleX: [1, 1.05, 1],
+        scaleY: [1, 0.95, 1],
+        transition: {
+            duration: 6,
+            repeat: Infinity,
+            repeatType: 'reverse' as 'reverse',
+        },
+    };
     return (
         <Card>
             <div className="flex justify-between items-center relative overflow-visible">
@@ -12,8 +22,10 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
                     {pokemon.name}
                 </h3>
                 <div className="absolute right-0 top-0 -translate-y-1/2">
-                    <Image width={100} height={100} src={pokemon.sprite} alt={pokemon.name}
-                           className="object-cover isolation-isolate"/>
+                    <motion.div animate={distortAnimation}>
+                        <Image width={100} height={100} src={pokemon.sprite} alt={pokemon.name}
+                               className="object-cover isolation-isolate"/>
+                    </motion.div>
                 </div>
             </div>
             <Separator/>
