@@ -10,7 +10,8 @@ import {
 
 function makeClient() {
     const httpLink = new HttpLink({
-        uri: "http://localhost:3000/api/graphql",
+        // Url graphql server
+        uri: "process.env.API_URL "|| "http://localhost:3000/api/graphql",
         fetchOptions: { cache: "no-store" },
     });
 

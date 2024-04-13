@@ -1,6 +1,6 @@
 import { Pokemon } from '@/../types/pokemon.type';
 import Image from "next/image";
-import {Card, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
+import {Card} from "@/components/ui/card";
 import {Separator} from "@/components/ui/separator";
 import { Progress } from "@/components/ui/progress"
 import { motion } from 'framer-motion';
