@@ -5,11 +5,12 @@ import {useState} from "react";
 
 export default function Pokedex() {
     const [search, setSearch] = useState('');
+    const [filterType, setFilterType] = useState('');
 
     return (
         <>
-            <Filter onSearch={setSearch} />
-            <PokedexGrid search={search} />
+            <Filter onSearch={setSearch} onFilterType={setFilterType} />
+            <PokedexGrid search={search} filterType={filterType} />
         </>
     );
 }
