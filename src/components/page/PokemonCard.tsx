@@ -33,9 +33,8 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
             <div className="p-4">
                 <h2 className="text-xl font-semibold text-gray-800"></h2>
                 {pokemon.types.map((type, index) => (
-                    <Badge key={index} variant="outline" className={`mr-1 bg-${type.toLowerCase()}`}>{type}</Badge>
+                    <Badge key={index} variant="outline" className={`text-white mr-1 bg-${type.toLowerCase()}`}>{type}</Badge>
                 ))}
-                <p className="text-sm text-gray-600 dark:text-white">Ability: {pokemon.abilities.primary}</p>
                 <div className="mt-4">
                     <div className="grid grid-cols-2 ">
                         <p className="text-xs">HP: {pokemon.stats.HP}</p>
