@@ -15,6 +15,7 @@ export default function Filter({ onSearch, onFilterType }: FilterProps) {
             onSearch(value);
         }
     };
+
     return (
         <div className="my-20">
             <div className="my-12">
