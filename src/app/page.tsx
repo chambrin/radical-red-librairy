@@ -1,6 +1,5 @@
 import Image from "next/image";
-import {Button} from "@/components/ui/button";
-import SwitchThemeButton from "@/components/utils/SwitchThemes";
+
 
 export default function Home() {
   return (
@@ -110,7 +109,6 @@ export default function Home() {
           </p>
         </a>
       </div>
-      <SwitchThemeButton/>
     </main>
   );
 }

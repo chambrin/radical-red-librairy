@@ -1,7 +1,7 @@
 'use client'
-// components/SwitchThemeButton.tsx
 import {useTheme} from "@/context/ThemeContext";
 import {Button} from "@/components/ui/button";
+import { Sun, Moon } from 'lucide-react';
 
 export default function SwitchThemeButton() {
     const { theme, setTheme } = useTheme();
@@ -11,10 +11,8 @@ export default function SwitchThemeButton() {
     };
 
     return (
-        <div onClick={toggleTheme}>
-            <Button>
-            Switch to {theme === 'light' ? 'dark' : 'light'} theme
-            </Button>
+        <div onClick={toggleTheme} >
+            {theme === 'light' ? <Moon  /> : <Sun />}
         </div>
     );
 }
