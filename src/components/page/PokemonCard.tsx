@@ -1,23 +1,44 @@
 import { Pokemon } from '@/../types/pokemon.type';
 import Image from "next/image";
+import {Card, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
+import {Separator} from "@/components/ui/separator";
+import { Progress } from "@/components/ui/progress"
 
 export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
     return (
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <Image width={100} height={100} src={pokemon.sprite} alt={pokemon.name} className="w-full h-48 object-cover" />
+        <Card>
+            <div className="flex justify-between items-center relative overflow-visible">
+                <h3 className="p-4 overflow-hidden truncate">
+                    {pokemon.name}
+                </h3>
+                <div className="absolute right-0 top-0 -translate-y-1/2">
+                    <Image width={100} height={100} src={pokemon.sprite} alt={pokemon.name}
+                           className="object-cover isolation-isolate"/>
+                </div>
+            </div>
+            <Separator/>
             <div className="p-4">
-                <h2 className="text-xl font-semibold text-gray-800">{pokemon.name}</h2>
+                <h2 className="text-xl font-semibold text-gray-800"></h2>
                 <p className="text-sm text-gray-600">Types: {pokemon.types.join(', ')}</p>
                 <p className="text-sm text-gray-600">Primary Ability: {pokemon.abilities.primary}</p>
-                <h3 className="text-lg font-semibold text-gray-800">Stats:</h3>
-                <p className="text-sm text-gray-600">HP: {pokemon.stats.HP}</p>
-                <p className="text-sm text-gray-600">Atk: {pokemon.stats.Atk}</p>
-                <p className="text-sm text-gray-600">Def: {pokemon.stats.Def}</p>
-                <p className="text-sm text-gray-600">SpA: {pokemon.stats.SpA}</p>
-                <p className="text-sm text-gray-600">SpD: {pokemon.stats.SpD}</p>
-                <p className="text-sm text-gray-600">Spe: {pokemon.stats.Spe}</p>
-                <p className="text-sm text-gray-600">BST: {pokemon.stats.BST}</p>
+                <div className="mt-4">
+                    <div className="grid grid-cols-2 ">
+                        <p className="text-xs">HP: {pokemon.stats.HP}</p>
+                        <Progress value={pokemon.stats.HP} />
+                        <p className="text-xs">Atk: {pokemon.stats.Atk}</p>
+                        <Progress value={pokemon.stats.Atk} />
+                        <p className="text-xs">Def: {pokemon.stats.Def}</p>
+                        <Progress value={pokemon.stats.Def} />
+                        <p className="text-xs">SpA: {pokemon.stats.SpA}</p>
+                        <Progress value={pokemon.stats.SpA} />
+                        <p className="text-xs">SpD: {pokemon.stats.SpD}</p>
+                        <Progress value={pokemon.stats.SpD} />
+                        <p className="text-xs">Spe: {pokemon.stats.Spe}</p>
+                        <Progress value={pokemon.stats.Spe} />
+                        <p className="text-xs">BST: {pokemon.stats.BST}</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </Card>
     );
 }

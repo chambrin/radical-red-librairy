@@ -44,7 +44,7 @@ export default function PokedexGrid() {
     const pokemons: Pokemon[] = data.allPokemon;
 
     return (
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-4 gap-y-20">
             {pokemons.map((pokemon, index) => (
                 <PokemonCard key={index} pokemon={pokemon} />
             ))}
