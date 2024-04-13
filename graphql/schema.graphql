@@ -1,0 +1,33 @@
+type Query {
+  greetings: String
+  pokemon(name: String!): Pokemon
+  allPokemon: [Pokemon]
+}
+
+type Location {
+  location: String
+  appearancePercentage: String
+}
+
+type Pokemon {
+  name: String
+  sprite: String
+  types: [String]
+  abilities: Abilities
+  stats: Stats
+  locations: [Location]
+}
+
+type Abilities {
+  primary: String
+}
+
+type Stats {
+  HP: Int
+  Atk: Int
+  Def: Int
+  SpA: Int
+  SpD: Int
+  Spe: Int
+  BST: Int
+}
