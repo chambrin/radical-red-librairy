@@ -12,7 +12,7 @@ function makeClient() {
     const httpLink = new HttpLink({
         // Url graphql server
         uri: "https://radical-red-librairy.vercel.app/api/graphql",
-        fetchOptions: { cache: "no-store" },
+        fetchOptions: { cache: "default" },
     });
 
     return new NextSSRApolloClient({
