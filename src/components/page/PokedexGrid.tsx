@@ -1,10 +1,7 @@
-'use client'
 import { useQuery, gql } from '@apollo/client';
 import PokemonCard from './PokemonCard';
 import { Pokemon } from '@/../types/pokemon.type';
 import PikaLoader from "@/components/utils/PikaLoader";
-import { FixedSizeGrid as Grid } from 'react-window';
-
 
 // GraphQL query
 const GET_ALL_POKEMON = gql`
@@ -25,6 +22,7 @@ const GET_ALL_POKEMON = gql`
         }
     }
 `;
+
 type PokedexGridProps = {
     search: string;
     filterType: string;
@@ -32,7 +30,11 @@ type PokedexGridProps = {
 
 export default function PokedexGrid({ search, filterType }: PokedexGridProps) {
     // execute request
-    const { loading, error, data } = useQuery(GET_ALL_POKEMON);
+    const { loading, error, data } = useQuery(GET_ALL_POKEMON, {
+        onCompleted: (data) => {
+            localStorage.setItem('allPokemon', JSON.stringify(data.allPokemon));
+        }
+    });
 
     // error message
     if (error) return <p>Error: {error.message}</p>;
@@ -41,7 +43,7 @@ export default function PokedexGrid({ search, filterType }: PokedexGridProps) {
     if (loading) return <div className="flex h-full justify-center items-center"><PikaLoader/></div>;
 
     // extract data
-    const pokemons: Pokemon[] = data.allPokemon;
+    let pokemons: Pokemon[] = data?.allPokemon || JSON.parse(localStorage.getItem('allPokemon') || '[]');
 
     // filter data
     const filteredPokemons = pokemons.filter(pokemon => {

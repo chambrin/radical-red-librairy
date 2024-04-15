@@ -24,7 +24,7 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
                 </h3>
                 <div className="absolute right-0 top-0 -translate-y-1/2">
                     <motion.div animate={distortAnimation}>
-                        <Image width={100} height={100} src={pokemon.sprite} alt={pokemon.name}
+                        <Image loading="lazy" width={100} height={100} src={pokemon.sprite} alt={pokemon.name}
                                className="object-cover isolation-isolate"/>
                     </motion.div>
                 </div>
@@ -54,5 +54,6 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
                 </div>
             </div>
         </Card>
+        
     );
 }
