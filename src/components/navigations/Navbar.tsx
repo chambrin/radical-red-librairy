@@ -2,17 +2,7 @@
 import { useState } from 'react';
 import SwitchThemeButton from '../utils/SwitchThemes';
 import Link from "next/link";
-
-const links = [
-    {
-        name: 'Home',
-        href: '/#',
-    },
-    {
-        name: 'Pokedex',
-        href: '/pokedex',
-    },
-]
+import links from "../../../content/links.json";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,15 +17,42 @@ export default function Navbar() {
                         </Link>
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-4">
-                                {links.map((link, index) => (
-                                    <Link
-                                        key={index}
-                                        className="text-gray-600 dark:text-white hover:bg-primary hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                                        href={link.href}
-                                    >
-                                        {link.name}
-                                    </Link>
-                                ))}
+                                {links.map((link, index) => {
+                                    const [isOpen, setIsOpen] = useState(false);
+
+                                    return (
+                                        <div key={index} className="relative group">
+                                            <Link
+                                                className="text-gray-600 dark:text-white hover:bg-primary hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                                href={link.href}
+                                                onClick={(e) => {
+                                                    if (link.children) {
+                                                        e.preventDefault();
+                                                        setIsOpen(!isOpen);
+                                                    }
+                                                }}
+                                            >
+                                                {link.name}
+                                            </Link>
+                                            {link.children && isOpen && (
+                                                <div
+                                                    className="absolute left-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 z-10">
+                                                    <div className="py-1 rounded-md bg-white shadow-xs">
+                                                        {link.children.map((child, childIndex) => (
+                                                            <Link
+                                                                key={childIndex}
+                                                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                                href={child.href}
+                                                            >
+                                                                {child.name}
+                                                            </Link>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                })}
                                 <SwitchThemeButton/>
                             </div>
                         </div>
@@ -54,13 +71,29 @@ export default function Navbar() {
             <div className={`${isOpen ? '' : 'hidden'} md:hidden`}>
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     {links.map((link, index) => (
-                        <Link
-                            key={index}
-                            className="text-gray-300  dark:text-white hover:bg-primary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                            href={link.href}
-                        >
-                            {link.name}
-                        </Link>
+                        <div key={index} className="relative group">
+                            <Link
+                                className="text-gray-300  dark:text-white hover:bg-primary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                href={link.href}
+                            >
+                                {link.name}
+                            </Link>
+                            {link.children && (
+                                <div className="absolute left-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 hidden group-hover:block z-10 transition ease-in-out duration-200 delay-150">
+                                    <div className="py-1 rounded-md bg-white shadow-xs">
+                                        {link.children.map((child, childIndex) => (
+                                            <Link
+                                                key={childIndex}
+                                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                href={child.href}
+                                            >
+                                                {child.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                     ))}
                     <SwitchThemeButton/>
                 </div>

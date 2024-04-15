@@ -7,7 +7,7 @@ import {ApolloWrapper} from "@/provider/ApolloWrapper";
 
 
 export const metadata: Metadata = {
-  title: "Pokemon Radical Red Librairy," ,
+  title: "Pokemon Radical Red Librairy" ,
   description: "Pokemon Radical Red Librairy is a web application that allows you to search for information about Pokemon, such as their types, abilities, and moves.",
 };
 
