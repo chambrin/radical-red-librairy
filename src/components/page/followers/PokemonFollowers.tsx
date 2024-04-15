@@ -16,7 +16,20 @@ const GET_POKEMON_SPRITE = gql`
 
 const followersTyped = followers as Region;
 
+const Pokemon = ({ name }: { name: string }) => {
+    const { data, loading, error } = useQuery(GET_POKEMON_SPRITE, { variables: { name } });
 
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error.message}</p>;
+
+    return (
+        <div className="flex items-center">
+            {data?.pokemon?.sprite && (
+                <Image width={80} height={80} src={data.pokemon.sprite} alt={name}/>
+            )}
+        </div>
+    );
+};
 
 function PokemonFollowers() {
     const regions = Object.keys(followersTyped);
@@ -29,20 +42,9 @@ function PokemonFollowers() {
                     <div key={index} className="mb-8">
                         <h3 className="mb-2 text-4xl">{region}</h3>
                         <div className="grid grid-cols-8 gap-4">
-                            {followersTyped[region].map((pokemon: PokemonName, pokemonIndex: number) => {
-                                const { data, loading, error } = useQuery(GET_POKEMON_SPRITE, { variables: { name: pokemon.name } });
-
-                                if (loading) return <p key={`loading-${pokemonIndex}`}>Loading...</p>;
-                                if (error) return <p key={`error-${pokemonIndex}`}>Error: {error.message}</p>;
-
-                                return (
-                                    <div key={pokemonIndex} className="flex items-center">
-                                        {data?.pokemon?.sprite && (
-                                            <Image width={80} height={80} src={data.pokemon.sprite} alt={pokemon.name}/>
-                                        )}
-                                    </div>
-                                );
-                            })}
+                            {followersTyped[region].map((pokemon: PokemonName, pokemonIndex: number) => (
+                                <Pokemon key={pokemonIndex} name={pokemon.name} />
+                            ))}
                         </div>
                     </div>
                 ))}

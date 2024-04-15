@@ -6,7 +6,13 @@ import links from "../../../content/links.json";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [openLinks, setOpenLinks] = useState(Array(links.length).fill(false));
 
+    const toggleLink = (index: number) => {
+        const newOpenLinks = [...openLinks];
+        newOpenLinks[index] = !newOpenLinks[index];
+        setOpenLinks(newOpenLinks);
+    };
     return (
         <nav className="bg-white dark:bg-background">
             <div className="max-w-7xl mx-auto px-8">
@@ -18,7 +24,6 @@ export default function Navbar() {
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-4">
                                 {links.map((link, index) => {
-                                    const [isOpen, setIsOpen] = useState(false);
                                     return (
                                         <div key={index} className="relative group">
                                             <Link
@@ -27,13 +32,13 @@ export default function Navbar() {
                                                 onClick={(e) => {
                                                     if (link.children) {
                                                         e.preventDefault();
-                                                        setIsOpen(!isOpen);
+                                                        toggleLink(index);
                                                     }
                                                 }}
                                             >
                                                 {link.name}
                                             </Link>
-                                            {link.children && isOpen && (
+                                            {link.children && openLinks[index] && (
                                                 <div
                                                     className="absolute left-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 z-10">
                                                     <div className="py-1 rounded-md bg-white shadow-xs">
