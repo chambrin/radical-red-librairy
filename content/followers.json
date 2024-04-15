@@ -22,10 +22,10 @@
       "name": "Charizard"
     },
     {
-      "name": "Charizard-Mega X"
+      "name": "Charizard-Mega-X"
     },
     {
-      "name": "Charizard-Mega Y"
+      "name": "Charizard-Mega-Y"
     },
     {
       "name": "Squirtle"
@@ -314,7 +314,7 @@
       {"name": "Wingull"},
       {"name": "Pelipper"},
       {"name": "Gardevoir"},
-      {"name": "Gardevoir–Mega"},
+      {"name": "Gardevoir-Mega"},
       {"name": "Mawile-Mega"},
       {"name": "Manectric-Mega"},
       {"name": "Gulpin"},
@@ -421,15 +421,14 @@
     {"name": "Froakie"},
     {"name": "Frogadier"},
     {"name": "Greninja"},
-    {"name": "Ash-Greninja"},
+    {"name": "Greninja-Ash"},
     {"name": "Floette-Eternal"},
     {"name": "Pancham"},
     {"name": "Pangoro"},
-    {"name": "Aegislash"},
+    {"name": "Aegislash-Shield"},
     {"name": "Sylveon"},
     {"name": "Goodra"},
     {"name": "Xerneas"},
-    {"name": "Xerneas-Natural"},
     {"name": "Yveltal"},
     {"name": "Diancie-Mega"},
     {"name": "Hoopa"},
@@ -456,7 +455,7 @@
     {"name": "Sandygast"},
     {"name": "Palossand"},
     {"name": "Mimikyu"},
-    {"name": "Kommo-O"},
+    {"name": "Kommo-o"},
     {"name": "Magearna"},
     {"name": "Marshadow"}
   ],
@@ -482,8 +481,8 @@
     {"name": "Dracovish"},
     {"name": "Arctovish"},
     {"name": "Dragapult"},
-    {"name": "Urshifu-Single"},
-    {"name": "Urshifu-Rapid"}
+    {"name": "Urshifu"},
+    {"name": "Urshifu-Rapid-Strike"}
   ],
   "Paldea": [
     {"name": "Sprigatito"},
