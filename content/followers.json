@@ -1,0 +1,543 @@
+{
+  "Kanto": [
+    {
+      "name": "Bulbasaur"
+    },
+    {
+      "name": "Ivysaur"
+    },
+    {
+      "name": "Venusaur"
+    },
+    {
+      "name": "Venusaur-Mega"
+    },
+    {
+      "name": "Charmander"
+    },
+    {
+      "name": "Charmeleon"
+    },
+    {
+      "name": "Charizard"
+    },
+    {
+      "name": "Charizard-Mega X"
+    },
+    {
+      "name": "Charizard-Mega Y"
+    },
+    {
+      "name": "Squirtle"
+    },
+    {
+      "name": "Wartortle"
+    },
+    {
+      "name": "Blastoise"
+    },
+    {
+      "name": "Blastoise-Mega"
+    },
+    {
+      "name": "Pikachu"
+    },
+    {
+      "name": "Raichu"
+    },
+    {
+      "name": "Nidoking"
+    },
+    {
+      "name": "Clefairy"
+    },
+    {
+      "name": "Clefable"
+    },
+    {
+      "name": "Vulpix"
+    },
+    {
+      "name": "Ninetales"
+    },
+    {
+      "name": "Zubat"
+    },
+    {
+      "name": "Golbat"
+    },
+    {
+      "name": "Parasect"
+    },
+    {
+      "name": "Golduck"
+    },
+    {
+      "name": "Arcanine"
+    },
+    {
+      "name": "Poliwag"
+    },
+    {
+      "name": "Poliwhirl"
+    },
+    {
+      "name": "Poliwrath"
+    },
+    {
+      "name": "Alakazam"
+    },
+    {
+      "name": "Alakazam-Mega"
+    },
+    {
+      "name": "Machamp-Mega"
+    },
+    {
+      "name": "Tentacool"
+    },
+    {
+      "name": "Tentacruel"
+    },
+    {
+      "name": "Slowbro"
+    },
+    {
+      "name": "Slowbro-Mega"
+    },
+    {
+      "name": "Magnemite"
+    },
+    {
+      "name": "Magneton"
+    },
+    {
+      "name": "Gengar"
+    },
+    {
+      "name": "Gengar-Mega"
+    },
+    {
+      "name": "Cubone"
+    },
+    {
+      "name": "Marowak"
+    },
+    {
+      "name": "Chansey"
+    },
+    {
+      "name": "Kangaskhan"
+    },
+    {
+      "name": "Kangaskhan-Mega"
+    },
+    {
+      "name": "Starmie"
+    },
+    {
+      "name": "Pinsir-Mega"
+    },
+    {
+      "name": "Magikarp"
+    },
+    {
+      "name": "Gyarados"
+    },
+    {
+      "name": "Gyarados-Mega"
+    },
+    {
+      "name": "Lapras"
+    },
+    {
+      "name": "Ditto"
+    },
+    {
+      "name": "Eevee"
+    },
+    {
+      "name": "Vaporeon"
+    },
+    {
+      "name": "Jolteon"
+    },
+    {
+      "name": "Flareon"
+    },
+    {
+      "name": "Snorlax"
+    },
+    {
+      "name": "Articuno"
+    },
+    {
+      "name": "Zapdos"
+    },
+    {
+      "name": "Moltres"
+    },
+    {
+      "name": "Dragonite"
+    },
+    {
+      "name": "Mewtwo"
+    },
+    {
+      "name": "Mew"
+    },
+    {
+      "name": "Melmetal"
+    }
+  ],
+  "Johto": [
+    {
+      "name": "Chikorita"
+    },
+    {
+      "name": "Bayleef"
+    },
+    {
+      "name": "Meganium"
+    },
+    {
+      "name": "Cyndaquil"
+    },
+    {
+      "name": "Quilava"
+    },
+    {
+      "name": "Typhlosion"
+    },
+    {
+      "name": "Totodile"
+    },
+    {
+      "name": "Croconaw"
+    },
+    {
+      "name": "Feraligatr"
+    },
+    {
+      "name": "Furret"
+    },
+    {
+      "name": "Ledian"
+    },
+    {
+      "name": "Crobat"
+    },
+    {
+      "name": "Lanturn"
+    },
+    {
+      "name": "Mareep"
+    },
+    {
+      "name": "Flaaffy"
+    },
+    {
+      "name": "Ampharos"
+    },
+    {
+      "name": "Ampharos-Mega"
+    },
+    {
+      "name": "Azumarill"
+    },
+    {
+      "name": "Politoed"
+    },
+    {
+      "name": "Wooper"
+    },
+    {
+      "name": "Quagsire"
+    },
+    {
+      "name": "Espeon"
+    },
+    {
+      "name": "Umbreon"
+    },
+    {
+      "name": "Scizor"
+    },
+    {
+      "name": "Scizor-Mega"
+    },
+    {
+      "name": "Teddiursa"
+    },
+    {
+      "name": "Ursaring"
+    },
+    {
+      "name": "Houndoom-Mega"
+    },
+    {
+      "name": "Smeargle"
+    },
+    {
+      "name": "Blissey"
+    },
+    {
+      "name": "Tyranitar"
+    },
+    {
+      "name": "Tyranitar-Mega"
+    },
+    {
+      "name": "Lugia"
+    },
+    {
+      "name": "Ho-Oh"
+    },
+    {
+      "name": "Celebi"
+    }
+    ],
+    "Hoenn": [
+      {"name": "Treecko"},
+      {"name": "Grovyle"},
+      {"name": "Sceptile"},
+      {"name": "Sceptile-Mega"},
+      {"name": "Torchic"},
+      {"name": "Combusken"},
+      {"name": "Blaziken"},
+      {"name": "Blaziken-Mega"},
+      {"name": "Mudkip"},
+      {"name": "Marshtomp"},
+      {"name": "Swampert"},
+      {"name": "Swampert-Mega"},
+      {"name": "Mightyena"},
+      {"name": "Wingull"},
+      {"name": "Pelipper"},
+      {"name": "Gardevoir"},
+      {"name": "Gardevoir–Mega"},
+      {"name": "Mawile-Mega"},
+      {"name": "Manectric-Mega"},
+      {"name": "Gulpin"},
+      {"name": "Swalot"},
+      {"name": "Sharpedo"},
+      {"name": "Sharpedo-Mega"},
+      {"name": "Torkoal"},
+      {"name": "Flygon"},
+      {"name": "Whiscash"},
+      {"name": "Milotic"},
+      {"name": "Chimecho"},
+      {"name": "Absol"},
+      {"name": "Salamence"},
+      {"name": "Salamence-Mega"},
+      {"name": "Metagross"},
+      {"name": "Metagross-Mega"},
+      {"name": "Kyogre"},
+      {"name": "Groudon"},
+      {"name": "Rayquaza"},
+      {"name": "Deoxys"},
+      {"name": "Deoxys-Attack"},
+      {"name": "Deoxys-Defense"},
+      {"name": "Deoxys-Speed"}
+    ],
+    "Sinnoh": [
+      {"name": "Turtwig"},
+      {"name": "Grotle"},
+      {"name": "Torterra"},
+      {"name": "Chimchar"},
+      {"name": "Monferno"},
+      {"name": "Infernape"},
+      {"name": "Piplup"},
+      {"name": "Prinplup"},
+      {"name": "Empoleon"},
+      {"name": "Staraptor"},
+      {"name": "Kricketune"},
+      {"name": "Luxray"},
+      {"name": "Roserade"},
+      {"name": "Lopunny"},
+      {"name": "Lopunny-Mega"},
+      {"name": "Spiritomb"},
+      {"name": "Garchomp"},
+      {"name": "Garchomp-Mega"},
+      {"name": "Lucario"},
+      {"name": "Lucario-Mega"},
+      {"name": "Drapion"},
+      {"name": "Toxicroak"},
+      {"name": "Abomasnow"},
+      {"name": "Abomasnow-Mega"},
+      {"name": "Weavile"},
+      {"name": "Magnezone"},
+      {"name": "Rhyperior"},
+      {"name": "Electivire"},
+      {"name": "Magmortar"},
+      {"name": "Togekiss"},
+      {"name": "Leafeon"},
+      {"name": "Glaceon"},
+      {"name": "Gliscor"},
+      {"name": "Mamoswine"},
+      {"name": "Gallade"},
+      {"name": "Gallade-Mega"},
+      {"name": "Rotom"},
+      {"name": "Dialga"},
+      {"name": "Palkia"},
+      {"name": "Heatran"},
+      {"name": "Arceus"}
+    ],
+  "Unova": [
+    {"name": "Snivy"},
+    {"name": "Servine"},
+    {"name": "Serperior"},
+    {"name": "Tepig"},
+    {"name": "Pignite"},
+    {"name": "Emboar"},
+    {"name": "Oshawott"},
+    {"name": "Dewott"},
+    {"name": "Samurott"},
+    {"name": "Excadrill"},
+    {"name": "Conkeldurr"},
+    {"name": "Krookodile"},
+    {"name": "Darmanitan"},
+    {"name": "Amoonguss"},
+    {"name": "Ferroseed"},
+    {"name": "Ferrothorn"},
+    {"name": "Chandelure"},
+    {"name": "Hydreigon"},
+    {"name": "Volcarona"},
+    {"name": "Cobalion"},
+    {"name": "Terrakion"},
+    {"name": "Virizion"},
+    {"name": "Tornadus"},
+    {"name": "Thundurus"},
+    {"name": "Landorus"},
+    {"name": "Keldeo"},
+    {"name": "Keldeo-Resolute"}
+  ],
+  "Kalos": [
+    {"name": "Chespin"},
+    {"name": "Quilladin"},
+    {"name": "Chesnaught"},
+    {"name": "Fennekin"},
+    {"name": "Braixen"},
+    {"name": "Delphox"},
+    {"name": "Froakie"},
+    {"name": "Frogadier"},
+    {"name": "Greninja"},
+    {"name": "Ash-Greninja"},
+    {"name": "Floette-Eternal"},
+    {"name": "Pancham"},
+    {"name": "Pangoro"},
+    {"name": "Aegislash"},
+    {"name": "Sylveon"},
+    {"name": "Goodra"},
+    {"name": "Xerneas"},
+    {"name": "Xerneas-Natural"},
+    {"name": "Yveltal"},
+    {"name": "Diancie-Mega"},
+    {"name": "Hoopa"},
+    {"name": "Hoopa-Unbound"},
+    {"name": "Volcanion"}
+  ],
+  "Alola": [
+    {"name": "Rowlet"},
+    {"name": "Dartrix"},
+    {"name": "Decidueye"},
+    {"name": "Litten"},
+    {"name": "Torracat"},
+    {"name": "Incineroar"},
+    {"name": "Popplio"},
+    {"name": "Brionne"},
+    {"name": "Primarina"},
+    {"name": "Mareanie"},
+    {"name": "Toxapex"},
+    {"name": "Mudbray"},
+    {"name": "Mudsdale"},
+    {"name": "Stufful"},
+    {"name": "Bewear"},
+    {"name": "Golisopod"},
+    {"name": "Sandygast"},
+    {"name": "Palossand"},
+    {"name": "Mimikyu"},
+    {"name": "Kommo-O"},
+    {"name": "Magearna"},
+    {"name": "Marshadow"}
+  ],
+  "Galar": [
+    {"name": "Grookey"},
+    {"name": "Thwackey"},
+    {"name": "Rillaboom"},
+    {"name": "Scorbunny"},
+    {"name": "Raboot"},
+    {"name": "Cinderace"},
+    {"name": "Sobble"},
+    {"name": "Drizzile"},
+    {"name": "Inteleon"},
+    {"name": "Greedent"},
+    {"name": "Corviknight"},
+    {"name": "Wooloo"},
+    {"name": "Dubwool"},
+    {"name": "Yamper"},
+    {"name": "Boltund"},
+    {"name": "Toxtricity"},
+    {"name": "Dracozolt"},
+    {"name": "Arctozolt"},
+    {"name": "Dracovish"},
+    {"name": "Arctovish"},
+    {"name": "Dragapult"},
+    {"name": "Urshifu-Single"},
+    {"name": "Urshifu-Rapid"}
+  ],
+  "Paldea": [
+    {"name": "Sprigatito"},
+    {"name": "Floragato"},
+    {"name": "Meowscarada"},
+    {"name": "Fuecoco"},
+    {"name": "Crocalor"},
+    {"name": "Skeledirge"},
+    {"name": "Quaxly"},
+    {"name": "Quaxwell"},
+    {"name": "Quaquaval"},
+    {"name": "Farigiraf"},
+    {"name": "Palafin-Hero"},
+    {"name": "Bellibolt"},
+    {"name": "Orthworm"},
+    {"name": "Baxcalibur"},
+    {"name": "Cyclizar"},
+    {"name": "Pawmot"},
+    {"name": "Flamigo"},
+    {"name": "Gholdengo"},
+    {"name": "Great Tusk"},
+    {"name": "Flutter Mane"},
+    {"name": "Roaring Moon"},
+    {"name": "Iron Moth"},
+    {"name": "Iron Hands"},
+    {"name": "Iron Bundle"},
+    {"name": "Iron Valiant"},
+    {"name": "Tinkaton"},
+    {"name": "Armarouge"},
+    {"name": "Ceruledge"},
+    {"name": "Clodsire"},
+    {"name": "Annihilape"},
+    {"name": "Walking Wake"},
+    {"name": "Raging Bolt"},
+    {"name": "Gouging Fire"}
+  ],
+  "Regionals": [
+    {"name": "Sandshrew-Alola", "note": "Sandshrew-Alola is listed twice, assuming a duplicate entry"},
+    {"name": "Vulpix-Alola"},
+    {"name": "Ninetales-Alola"},
+    {"name": "Growlithe-Hisui"},
+    {"name": "Arcanine-Hisui"},
+    {"name": "Dodrio-Sevii"},
+    {"name": "Cubone-Alola", "note": "identical to Cubone"},
+    {"name": "Marowak-Alola"},
+    {"name": "Articuno-Galar"},
+    {"name": "Zapdos-Galar"},
+    {"name": "Moltres-Galar"},
+    {"name": "Typhlosion-Hisui"},
+    {"name": "Milotic-Sevii"},
+    {"name": "Samurott-Hisui"},
+    {"name": "Zoroark-Hisui"},
+    {"name": "Goodra-Hisui"},
+    {"name": "Decidueye-Hisui"},
+    {"name": "Wishiwashi-Sevii"}
+  ]
+}

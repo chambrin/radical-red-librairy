@@ -27,5 +27,12 @@ export interface Pokemon {
     locations: Location[];
     image: string;
     number: number;
-
 }
+
+export type PokemonName = {
+    name: string;
+};
+
+export type Region = {
+    [key: string]: PokemonName[];
+};

@@ -2,6 +2,7 @@ type Query {
   greetings: String
   pokemon(name: String!): Pokemon
   allPokemon: [Pokemon]
+  pokemons(names: [String!]!): [Pokemon]
 }
 
 type Location {
