@@ -19,7 +19,6 @@ export default function Navbar() {
                             <div className="ml-10 flex items-baseline space-x-4">
                                 {links.map((link, index) => {
                                     const [isOpen, setIsOpen] = useState(false);
-
                                     return (
                                         <div key={index} className="relative group">
                                             <Link
