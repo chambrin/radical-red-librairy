@@ -3,6 +3,8 @@ import PokedexGrid from "@/components/page/PokedexGrid";
 import Filter from "@/components/page/Filter";
 import {useState} from "react";
 
+
+
 export default function Pokedex() {
     const [search, setSearch] = useState('');
     const [filterType, setFilterType] = useState('');
