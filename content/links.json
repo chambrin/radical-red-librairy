@@ -8,6 +8,10 @@
     "href": "/pokedex"
   },
   {
+    "name": "locations",
+    "href": "/locations"
+  },
+  {
     "name": "Info",
     "href": "/info",
     "children": [

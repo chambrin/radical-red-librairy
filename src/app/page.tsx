@@ -1,6 +1,6 @@
 import Image from "next/image";
-import SceneGameboy from "@/components/page/landing/3d";
 import Link from "next/link";
+import SceneGameboy from "@/components/page/landing/3d";
 
 
 export default function Home() {
@@ -36,6 +36,5 @@ export default function Home() {
               </div>
           </section>
       </div>
-
   );
 }
