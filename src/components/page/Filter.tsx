@@ -1,5 +1,8 @@
 import {Input} from "@/components/ui/input";
 import Image from "next/image";
+import {Button} from "@/components/ui/button";
+import {RotateCcw} from "lucide-react";
+
 
 type FilterProps = {
     onSearch: (value: string) => void;
@@ -34,6 +37,10 @@ export default function Filter({ onSearch, onFilterType }: FilterProps) {
                     </div>
                 ))}
             </div>
+            <Button variant="secondary" className="text-white mt-10" onClick={() => onFilterType('')}>
+                <RotateCcw size={20} className="mr-2" />
+                Clear Filter
+            </Button>
         </div>
     );
 }
