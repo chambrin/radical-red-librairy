@@ -4,6 +4,8 @@ import {Pokemon, Location} from "../../../types/pokemon.type";
 import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/components/ui/card"
 import LocationSelector from "@/components/page/locations/FilterLocations";
 import {useState} from "react";
+import PikaLoader from "@/components/utils/PikaLoader";
+import Image from "next/image";
 
 
 const GET_POKEMONS_WITH_LOCATIONS = gql`
@@ -24,7 +26,7 @@ export default function PokemonLocations() {
     // Define selectedLocation and a function to update it
     const [selectedLocation, setSelectedLocation] = useState('');
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <PikaLoader/>;
     if (error) return <p>Error: {error.message}</p>;
 
     const pokemonsWithLocations = data.allPokemon.filter((pokemon: Pokemon) => pokemon.locations && pokemon.locations.length > 0);
@@ -78,11 +80,11 @@ export default function PokemonLocations() {
 
                                         return (
                                             <div key={pokemonIndex} className="grid grid-cols-2 py-1">
-                                                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400 flex items-center">
-                                                    <img src={pokemon.sprite} alt={pokemon.name}/>
+                                                <div className="text-sm font-medium text-gray-500 dark:text-gray-400 flex items-center">
+                                                    <Image width={50} height={50} src={pokemon.sprite} alt={pokemon.name}/>
                                                     {pokemon.name}
-                                                </dt>
-                                                <dd className="flex items-center justify-end text-sm font-medium">{pokemonLocation?.appearancePercentage}</dd>
+                                                </div>
+                                                <div className="flex items-center justify-end text-sm font-medium">{pokemonLocation?.appearancePercentage}</div>
                                             </div>
                                         );
                                     })}
