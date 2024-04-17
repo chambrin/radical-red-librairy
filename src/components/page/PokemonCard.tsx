@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { Badge } from "@/components/ui/badge"
 import {keys, set} from "idb-keyval";
 import {Button} from "@/components/ui/button";
+import {toast} from "@/components/ui/use-toast"
 
 export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
     const distortAnimation = {
@@ -25,18 +26,33 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
         try {
             const allKeys = await keys();
             if (allKeys.length >= 6) {
-                alert('You cannot add more than 6 Pokémon to your team.');
+                // Use toast instead of alert
+                toast({
+                    variant: "destructive",
+                    title: "Team Full",
+                    description: "You cannot add more than 6 Pokémon to your team.",
+                });
                 return;
             }
 
             await set(pokemon.name, pokemon);
-            alert(`${pokemon.name} has been added to your team!`);
+            // Use toast instead of alert
+            toast({
+                title: "Pokémon Added",
+                description: `${pokemon.name} has been added to your team!`,
+            });
 
             // Emit an event to notify that a pokemon has been added
             const event = new CustomEvent('pokemonAdded');
             window.dispatchEvent(event);
         } catch (err) {
             console.error('Error adding pokemon to team:', err);
+            // Use toast to display error message
+            toast({
+                variant: "destructive",
+                title: "Error",
+                description: "Error adding pokemon to team.",
+            });
         }
     };
 
@@ -77,7 +93,10 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
                     </div>
                 </div>
             </div>
-            <Button variant="link" onClick={addToTeam}>Add to team</Button>
+            <Button onClick={() => {
+                addToTeam();
+            }} variant="link">Add to team</Button>
+
         </Card>
     );
 }

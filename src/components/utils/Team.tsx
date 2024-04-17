@@ -60,11 +60,10 @@ export default function Team() {
                             exit={{scale: 0}}
                             transition={{duration: 0.5}}
                         >
-                            <Image onClick={removeFromTeam} width={50} height={50} src={team[index].sprite}
-                                   alt={team[index].name}/>
+                            <Image className="transition-transform duration-500 ease-in-out hover:rotate-12" onClick={removeFromTeam} width={50} height={50} src={team[index].sprite} alt={team[index].name}/>
                         </motion.div>
                     ) : (
-                        <Squircle className="mx-1" size={25}/>
+                        <Squircle className="mx-4" size={15}/>
                     )}
                 </div>
             ))}

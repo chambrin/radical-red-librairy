@@ -4,6 +4,7 @@ import { ThemeProvider } from '../context/ThemeContext';
 import Navbar from "@/components/navigations/Navbar";
 import { GeistSans } from "geist/font/sans";
 import {ApolloWrapper} from "@/provider/ApolloWrapper";
+import {Toaster} from "@/components/ui/toaster";
 
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({
           <ApolloWrapper>
               <Navbar/>
               {children}
+              <Toaster />
           </ApolloWrapper>
           </body>
           </html>
