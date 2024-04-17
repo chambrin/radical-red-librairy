@@ -1,7 +1,7 @@
 import {Input} from "@/components/ui/input";
-import Image from "next/image";
 import {Button} from "@/components/ui/button";
 import {RotateCcw} from "lucide-react";
+import {BadgeTypes} from "@/components/ui/BadgeTypes";
 
 
 type FilterProps = {
@@ -30,11 +30,7 @@ export default function Filter({ onSearch, onFilterType }: FilterProps) {
             </div>
             <div className="grid grid-cols-3 gap-2">
                 {pokemonTypes.map((type, index) => (
-                    <div key={index} onClick={() => onFilterType(type)}
-                         className={`flex scale-100 cursor-pointer hover:scale-105 items-center text-white mr-1 p-2 rounded-md bg-${type}`}>
-                        <Image width={15} height={15} src={`/types-icons/${type}.svg`} alt={type}/>
-                        <span className="ml-2">{type}</span>
-                    </div>
+                    <BadgeTypes key={index} type={type} onFilterType={onFilterType} />
                 ))}
             </div>
             <Button variant="secondary" className="text-white mt-10" onClick={() => onFilterType('')}>

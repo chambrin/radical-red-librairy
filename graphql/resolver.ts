@@ -9,9 +9,10 @@ const resolvers = {
             return pokemon;
         },
         allPokemon: (): any[] => {
-            return data.filter(pokemon => pokemon.locations && pokemon.locations.length > 0);
+            return data;
         },
     },
 };
+
 
 export default resolvers;

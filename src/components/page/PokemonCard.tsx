@@ -20,7 +20,6 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
         },
     };
 
-
     // Function to add pokemon to IndexedDB
     const addToTeam = async () => {
         try {

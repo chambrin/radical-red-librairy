@@ -8,8 +8,12 @@
     "href": "/pokedex"
   },
   {
-    "name": "locations",
+    "name": "Locations",
     "href": "/locations"
+  },
+  {
+    "name": "Team builder",
+    "href": "/builder"
   },
   {
     "name": "Info",
