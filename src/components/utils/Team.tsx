@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import { Pokemon } from '@/../types/pokemon.type';
 import Image from "next/image";
 import {keys, get, del} from 'idb-keyval';
-import {Squircle, X} from "lucide-react";
+import {Squircle} from "lucide-react";
+import { motion } from 'framer-motion';
 
 export default function Team() {
     const [team, setTeam] = useState<Pokemon[]>([]);
@@ -48,15 +49,22 @@ export default function Team() {
     const slots = new Array(6).fill(null);
 
     return (
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 ">
             {slots.map((slot, index) => (
-                <div  key={index}>
+                <div key={index}>
                     {team[index] ? (
-                        <>
-                            <Image onClick={removeFromTeam} width={50} height={50} src={team[index].sprite} alt={team[index].name}/>
-                        </>
+                        <motion.div
+                            key={team[index].name}
+                            initial={{scale: 0}}
+                            animate={{scale: 1}}
+                            exit={{scale: 0}}
+                            transition={{duration: 0.5}}
+                        >
+                            <Image onClick={removeFromTeam} width={50} height={50} src={team[index].sprite}
+                                   alt={team[index].name}/>
+                        </motion.div>
                     ) : (
-                        <Squircle className="mx-1" size={25} />
+                        <Squircle className="mx-1" size={25}/>
                     )}
                 </div>
             ))}
