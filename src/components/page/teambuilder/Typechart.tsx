@@ -34,7 +34,6 @@ export default function TypeChart() {
         fetchTeam();
     }, []);
 
-
     return (
         <Table>
             <TableHeader >
