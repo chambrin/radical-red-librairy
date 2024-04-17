@@ -3,6 +3,7 @@ import { useState } from 'react';
 import SwitchThemeButton from '../utils/SwitchThemes';
 import Link from "next/link";
 import links from "../../../content/links.json";
+import Team from "@/components/utils/Team";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ export default function Navbar() {
                         <Link className="flex-shrink-0" href="/">
                             Pokemon Radical Red Librairy
                         </Link>
+                        <Team/>
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-4">
                                 {links.map((link, index) => {

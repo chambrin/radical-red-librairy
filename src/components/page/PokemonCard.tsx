@@ -5,6 +5,8 @@ import {Separator} from "@/components/ui/separator";
 import { Progress } from "@/components/ui/progress"
 import { motion } from 'framer-motion';
 import { Badge } from "@/components/ui/badge"
+import {keys, set} from "idb-keyval";
+import {Button} from "@/components/ui/button";
 
 export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
     const distortAnimation = {
@@ -16,6 +18,28 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
             repeatType: 'reverse' as 'reverse',
         },
     };
+
+
+    // Function to add pokemon to IndexedDB
+    const addToTeam = async () => {
+        try {
+            const allKeys = await keys();
+            if (allKeys.length >= 6) {
+                alert('You cannot add more than 6 Pokémon to your team.');
+                return;
+            }
+
+            await set(pokemon.name, pokemon);
+            alert(`${pokemon.name} has been added to your team!`);
+
+            // Emit an event to notify that a pokemon has been added
+            const event = new CustomEvent('pokemonAdded');
+            window.dispatchEvent(event);
+        } catch (err) {
+            console.error('Error adding pokemon to team:', err);
+        }
+    };
+
     return (
         <Card>
             <div className="flex justify-between items-center relative overflow-visible">
@@ -53,6 +77,7 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
                     </div>
                 </div>
             </div>
+            <Button variant="link" onClick={addToTeam}>Add to team</Button>
         </Card>
     );
 }
