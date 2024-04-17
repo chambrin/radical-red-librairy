@@ -1,0 +1,477 @@
+[
+  {
+    "name": "RIVAL",
+    "location": "ROUTE 22",
+    "optional": true
+  },
+  {
+    "name": "BRENDAN",
+    "location": "VIRIDIAN FOREST",
+    "optional": false
+  },
+  {
+    "name": "LASS ANNE",
+    "location": "VIRIDIAN FOREST",
+    "optional": false
+  },
+  {
+    "name": "ACE NELLE",
+    "location": "VIRIDIAN FOREST",
+    "optional": true
+  },
+  {
+    "name": "FALKNER",
+    "location": "PEWTER CITY",
+    "optional": false
+  },
+  {
+    "name": "BROCK",
+    "location": "PEWTER CITY",
+    "optional": false
+  },
+  {
+    "name": "SUPER NERD MIGUEL",
+    "location": "MT. MOON",
+    "optional": false
+  },
+  {
+    "name": "ARCHER",
+    "location": "MT. MOON",
+    "optional": false
+  },
+  {
+    "name": "RIVAL",
+    "location": "CERULEAN CITY",
+    "optional": false
+  },
+  {
+    "name": "CATCHER CALE",
+    "location": "NUGGET BRIDGE",
+    "optional": false
+  },
+  {
+    "name": "LASS ALI",
+    "location": "NUGGET BRIDGE",
+    "optional": false
+  },
+  {
+    "name": "YOUNGSTER TIMMY",
+    "location": "NUGGET BRIDGE",
+    "optional": false
+  },
+  {
+    "name": "LASS RELLI",
+    "location": "NUGGET BRIDGE",
+    "optional": false
+  },
+  {
+    "name": "CAMPER ETHAN",
+    "location": "NUGGET BRIDGE",
+    "optional": false
+  },
+  {
+    "name": "GRUNT",
+    "location": "NUGGET BRIDGE",
+    "optional": false
+  },
+  {
+    "name": "BUGSY",
+    "location": "ROUTE 25",
+    "optional": true
+  },
+  {
+    "name": "MISTY",
+    "location": "CERULEAN CITY",
+    "optional": false
+  },
+  {
+    "name": "GRUNT",
+    "location": "DIG HOUSE",
+    "optional": false
+  },
+  {
+    "name": "ANN & BROOKS",
+    "location": "S.S. ANNE",
+    "optional": false
+  },
+  {
+    "name": "EDMOND & TREVOR",
+    "location": "S.S. ANNE",
+    "optional": false
+  },
+  {
+    "name": "BRENDAN",
+    "location": "S.S. ANNE",
+    "optional": false
+  },
+  {
+    "name": "WHITNEY",
+    "location": "ROUTE 11",
+    "optional": true
+  },
+  {
+    "name": "LT. SURGE",
+    "location": "VERMILLION CITY",
+    "optional": false
+  },
+  {
+    "name": "PICNICKER CAITLIN",
+    "location": "ROUTE 9",
+    "optional": false
+  },
+  {
+    "name": "MORTY",
+    "location": "LAVENDER TOWN",
+    "optional": true
+  },
+  {
+    "name": "ERIKA",
+    "location": "CELADON CITY",
+    "optional": false
+  },
+  {
+    "name": "GUARD",
+    "location": "GAME CORNER",
+    "optional": false
+  },
+  {
+    "name": "LEFT GUARD",
+    "location": "ROCKET HIDEOUT",
+    "optional": false
+  },
+  {
+    "name": "RIGHT GUARD",
+    "location": "ROCKET HIDEOUT",
+    "optional": false
+  },
+  {
+    "name": "GIOVANNI",
+    "location": "ROCKET HIDEOUT",
+    "optional": false
+  },
+  {
+    "name": "ACE COLE",
+    "location": "ROUTE 8",
+    "optional": true
+  },
+  {
+    "name": "BEAUTY SAM",
+    "location": "CELADON CITY HOTEL",
+    "optional": true
+  },
+  {
+    "name": "BEAUTY SHELLY",
+    "location": "CELADON CITY HOTEL",
+    "optional": true
+  },
+  {
+    "name": "GHOST",
+    "location": "POKEMON TOWER",
+    "optional": false
+  },
+  {
+    "name": "RIVAL",
+    "location": "SILPH CO.",
+    "optional": false
+  },
+  {
+    "name": "ARIANA & ARCHER",
+    "location": "SILPH CO.",
+    "optional": false
+  },
+  {
+    "name": "GIOVANNI",
+    "location": "SILPH CO.",
+    "optional": false
+  },
+  {
+    "name": "CHUCK",
+    "location": "SAFFRON CITY",
+    "optional": true
+  },
+  {
+    "name": "SABRINA",
+    "location": "SAFFRON CITY",
+    "optional": false
+  },
+  {
+    "name": "DUMASS KID",
+    "location": "SAFFRON CITY",
+    "optional": true
+  },
+  {
+    "name": "ROCKER LUCA",
+    "location": "ROUTE 12",
+    "optional": false
+  },
+  {
+    "name": "CAMPER JUSTIN",
+    "location": "ROUTE 12",
+    "optional": false
+  },
+  {
+    "name": "FISHERMAN ANDREW",
+    "location": "ROUTE 12",
+    "optional": false
+  },
+  {
+    "name": "BIRD KE. SEBASTIAN",
+    "location": "ROUTE 13",
+    "optional": false
+  },
+  {
+    "name": "PICNICKER SUSIE",
+    "location": "ROUTE 13",
+    "optional": false
+  },
+  {
+    "name": "PICNICKER ALMA",
+    "location": "ROUTE 13",
+    "optional": false
+  },
+  {
+    "name": "LOLA & SHEILA",
+    "location": "ROUTE 13",
+    "optional": false
+  },
+  {
+    "name": "BIRD KEEPER PERRY",
+    "location": "ROUTE 13",
+    "optional": false
+  },
+  {
+    "name": "BIKER JARED",
+    "location": "ROUTE 13",
+    "optional": false
+  },
+  {
+    "name": "ACE HALEY",
+    "location": "ROUTE 15",
+    "optional": true
+  },
+  {
+    "name": "BIKER LAO",
+    "location": "ROUTE 16",
+    "optional": false
+  },
+  {
+    "name": "CUE BALL KOJI",
+    "location": "ROUTE 16",
+    "optional": false
+  },
+  {
+    "name": "CUE BALL LUKE",
+    "location": "ROUTE 16",
+    "optional": false
+  },
+  {
+    "name": "BIKER RUBEN",
+    "location": "ROUTE 16",
+    "optional": false
+  },
+  {
+    "name": "CUE BALL CAMRON",
+    "location": "ROUTE 16",
+    "optional": false
+  },
+  {
+    "name": "BIKER HIDEO",
+    "location": "ROUTE 16",
+    "optional": false
+  },
+  {
+    "name": "BIKER WILLIAM",
+    "location": "ROUTE 18",
+    "optional": false
+  },
+  {
+    "name": "BIRD KEEPER JACOB",
+    "location": "ROUTE 18",
+    "optional": false
+  },
+  {
+    "name": "TAMER RAMIRO",
+    "location": "ROUTE 18",
+    "optional": true
+  },
+  {
+    "name": "ACE WILTON",
+    "location": "ROUTE 18",
+    "optional": false
+  },
+  {
+    "name": "BRENDAN",
+    "location": "SAFARI ZONE",
+    "optional": false
+  },
+  {
+    "name": "BROCK (REMATCH)",
+    "location": "PEWTER CITY",
+    "optional": false
+  },
+  {
+    "name": "MISTY (REMATCH)",
+    "location": "CERULEAN CITY",
+    "optional": false
+  },
+  {
+    "name": "LT. SURGE (REMATCH)",
+    "location": "VERMILLION CITY",
+    "optional": false
+  },
+  {
+    "name": "ERIKA (REMATCH)",
+    "location": "CELADON CITY",
+    "optional": true
+  },
+  {
+    "name": "KOGA",
+    "location": "FUCHSIA CITY",
+    "optional": false
+  },
+  {
+    "name": "DUMASS JOJO FAN",
+    "location": "POWER PLANT",
+    "optional": true
+  },
+  {
+    "name": "PRYCE",
+    "location": "SEAFOAM ISLANDS",
+    "optional": true
+  },
+  {
+    "name": "MAY",
+    "location": "CINNABAR ISLAND",
+    "optional": false
+  },
+  {
+    "name": "JASMINE",
+    "location": "CINNABAR ISLAND LAB",
+    "optional": true
+  },
+  {
+    "name": "ACE DEREK",
+    "location": "CINNABAR ISLAND GYM",
+    "optional": false
+  },
+  {
+    "name": "ACE LUCY",
+    "location": "CINNABAR ISLAND GYM",
+    "optional": false
+  },
+  {
+    "name": "ACE ZAC",
+    "location": "CINNABAR ISLAND GYM",
+    "optional": false
+  },
+  {
+    "name": "BLAINE",
+    "location": "CINNABAR ISLAND",
+    "optional": false
+  },
+  {
+    "name": "ARCHER",
+    "location": "CERULEAN CAVE",
+    "optional": false
+  },
+  {
+    "name": "ARIANA",
+    "location": "CERULEAN CAVE",
+    "optional": false
+  },
+  {
+    "name": "GIOVANNI",
+    "location": "CERULEAN CAVE",
+    "optional": false
+  },
+  {
+    "name": "BLACK BELT KETCHUP",
+    "location": "CERULEAN CAVE",
+    "optional": true
+  },
+  {
+    "name": "CLAIR",
+    "location": "VIRIDIAN CITY",
+    "optional": false
+  },
+  {
+    "name": "BURGLAR MAX",
+    "location": "POKEMON MANSION 4F",
+    "optional": true
+  },
+  {
+    "name": "BURGLAR ANSON",
+    "location": "POKEMON MANSION 4F",
+    "optional": true
+  },
+  {
+    "name": "RIVAL",
+    "location": "ROUTE 22",
+    "optional": false
+  },
+  {
+    "name": "BRENDAN",
+    "location": "ROUTE 23",
+    "optional": false
+  },
+  {
+    "name": "ACE NAOMI",
+    "location": "VICTORY ROAD",
+    "optional": false
+  },
+  {
+    "name": "ACE ROLANDO",
+    "location": "VICTORY ROAD",
+    "optional": false
+  },
+  {
+    "name": "ACE GEORGE",
+    "location": "VICTORY ROAD",
+    "optional": false
+  },
+  {
+    "name": "ACE CAROLINE",
+    "location": "VICTORY ROAD",
+    "optional": false
+  },
+  {
+    "name": "ACE COLBY",
+    "location": "VICTORY ROAD",
+    "optional": false
+  },
+  {
+    "name": "ACE ALEXA",
+    "location": "VICTORY ROAD",
+    "optional": false
+  },
+  {
+    "name": "DUMASS CREATOR",
+    "location": "INDIGO PLATEAU",
+    "optional": false
+  },
+  {
+    "name": "LORELEI",
+    "location": "ELITE FOUR",
+    "optional": false
+  },
+  {
+    "name": "BRUNO",
+    "location": "ELITE FOUR",
+    "optional": false
+  },
+  {
+    "name": "AGATHA",
+    "location": "ELITE FOUR",
+    "optional": false
+  },
+  {
+    "name": "LANCE",
+    "location": "ELITE FOUR",
+    "optional": false
+  },
+  {
+    "name": "RIVAL",
+    "location": "CHAMPION",
+    "optional": false
+  }
+]
